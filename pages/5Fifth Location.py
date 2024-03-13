@@ -7,7 +7,7 @@ import os
 import requests
 import json
 
-password = 'tbc'
+password = '123'
 
 test = st.text_input("What is the answer to x?")
 
