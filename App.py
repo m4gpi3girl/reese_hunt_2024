@@ -30,7 +30,6 @@ location_2_locked = True
 if k:
     if bar == answer_1_a or bar == answer_1_b or bar == answer_1_c or bar == answer_1_d:
         st.success("Meadowbank Park, coords 51.2342591, -0.3317815")
-        st.success("Apple Maps link: https://maps.apple.com/?ll=51.235197,-0.331297&q=Marked%20Location&_ext=EiYp3bpRC3adSUAx1LMKte2v1b85W5B3Z5yeSUBBEr3szt3E1L9QBA%3D%3D&t=m ")
         st.warning("To unlock Location 2, find the surname: Barney '____'")
         coords = [51.2342591, -0.3317815]
         loc_1 = folium.Map(location=coords, zoom_start=17)
