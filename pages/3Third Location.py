@@ -7,11 +7,13 @@ import os
 import requests
 import json
 
-password = '123'
+apassword = 'Smith'
+bpassword = 'SMITH'
+cpassword =  'smith'
 
-test = st.text_input("What is the answer to x?")
+test = st.text_input("What is surname?")
 
-if test == password:
+if test == apassword or test == bpassword or test == cpassword:
 
     st.success("Congrats, you made it! Now, answer the following question to reveal the next location..")
 
@@ -22,12 +24,13 @@ if test == password:
     answer_3_e = 'Meadow bank'
     answer_3_f = 'meadow Bank'
 
-    bar = st.text_input('Which ear does Reese have pierced, left or right?')
-    if st.button('Reveal first location'):
+    bar = st.text_input('What field did Reese have his first bong?')
+    if st.button('Reveal third location'):
         if bar == answer_3_a or bar == answer_3_b or bar == answer_3_c or bar == answer_3_d or bar == answer_3_e or bar == answer_3_f:
-            st.success("Meadowbank Park, coords 51.235214, -0.331248")
+            st.success("Meadowbank Park, coords 51.2356060, -0.3301243")
             st.success("Apple Maps link: https://maps.apple.com/place?q=Marked%20Location&ll=51.234566%2C-0.33217&address=Meadowbank%2C%20Mill%20Lane%2C%20Dorking%2C%20RH4%201DX%2C%20England")
-            coords = [51.235214, -0.331248]
+            st.warning("To unlock Location 2, finish the quote: Loved and Missed, '____'")
+            coords = [51.2356060, -0.3301243]
             loc_3 = folium.Map(location=coords, zoom_start=17)
             folium.Marker(location=coords, popup="Dorking RH4 1").add_to(loc_3)
             folium_static(loc_3)
