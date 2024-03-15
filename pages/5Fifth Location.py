@@ -12,4 +12,6 @@ password2 = 'drz'
 
 bb = st.text_input("Complete the number plate: KS62 '____'")
 
-st.write("### WELL DONE! MESSAGE REESE THE WORD 'DOOMSDAY' FOR FURTHER INSTRUCTION")
+if bb == password1 or bb == password2:
+
+  st.write("### WELL DONE! MESSAGE REESE THE WORD 'DOOMSDAY' FOR FURTHER INSTRUCTION")
