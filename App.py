@@ -7,7 +7,7 @@ from streamlit_folium import folium_static
 import os
 import requests
 import json
-from streamlit_extras.switch_page_button import switch_page
+
 
 
 st.set_page_config(page_title="Home", initial_sidebar_state="expanded")
