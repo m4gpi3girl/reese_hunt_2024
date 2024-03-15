@@ -11,7 +11,7 @@ apassword = 'Smith'
 bpassword = 'SMITH'
 cpassword =  'smith'
 
-test = st.text_input("What is surname?")
+test = st.text_input("What is the surname?")
 
 if test == apassword or test == bpassword or test == cpassword:
 
@@ -29,7 +29,7 @@ if test == apassword or test == bpassword or test == cpassword:
         if bar == answer_3_a or bar == answer_3_b or bar == answer_3_c or bar == answer_3_d or bar == answer_3_e or bar == answer_3_f:
             st.success("Meadowbank Park, coords 51.2356060, -0.3301243")
             st.success("Apple Maps link: https://maps.apple.com/place?q=Marked%20Location&ll=51.234566%2C-0.33217&address=Meadowbank%2C%20Mill%20Lane%2C%20Dorking%2C%20RH4%201DX%2C%20England")
-            st.warning("To unlock Location 2, finish the quote: Loved and Missed, '____'")
+            st.warning("To unlock Location 4, finish the quote: Loved and Missed, '____'")
             coords = [51.2356060, -0.3301243]
             loc_3 = folium.Map(location=coords, zoom_start=17)
             folium.Marker(location=coords, popup="Dorking RH4 1").add_to(loc_3)
