@@ -22,7 +22,7 @@ answer_1_b = 'five'
 answer_1_c = 'Five'
 answer_1_d = '5'
 
-bar = st.text_input('How many toes does the Dorking cockeral have?')
+bar = st.text_input('How many toes does the Dorking cockeral have on one foot?')
 k = st.button('Reveal first location')
 
 location_2_locked = True
